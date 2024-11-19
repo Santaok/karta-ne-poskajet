@@ -58,15 +58,20 @@
     
     <picture>
    
-      <source srcset="/images/cards-2x.avif 2x" type="image/avif">
-      <source srcset="/images/cards-2x.png 1x" type="image/png">
-      <source srcset="/images/cards-2x.web 1x" type="image/web">
-      
-      <source srcset="/images/cards-1x.avif 2x" type="image/avif">
-      <source srcset="/images/cards-1x.png 1x" type="image/png">
-      <source srcset="/images/cards-1x.web 1x" type="image/web">
-    
-      <img class="content__picture" src="/images/cards-1x.avif" alt="card">
+           <source
+              srcset="images/cards-2x.avif, img/cards-1x.avif 1x"
+              type="image/avif"
+            />
+            <source
+              srcset="images/cards-2x.webp, img/cards-1x.webp 1x"
+              type="image/webp"
+            />
+            <source
+              srcset="images/cards-2x.png, img/cards-1x.png 1x"
+              type="image/png"
+            />
+
+            <img class="content__picture" src="images/cards-1x.png" alt="" />
 
     </picture>
 
