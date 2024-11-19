@@ -85,16 +85,16 @@ a{
   .li{
     margin-bottom: 0;
   }
- .content__text-block_type_first-lettered
- .content__paragraph:nth-child(1)::first-letter{ /* буквица */
-    background-image: url(/images/pattern.svg) ;
-    padding: 0 4px 0 4px;
-    margin-right: 1px;
-    font-size: 30px;
-    font-family: "Raleway-Bold";
-    display: inline-block;
-    border: 1px solid #ccc;
-  } 
+.content__text-block_type_first-lettered
+  .content__paragraph:nth-child(1)::first-letter{ /* буквица */
+     background-color: var(--accent-color) ;
+     padding: 0 4px 0 4px;
+     margin-right: 1px;
+     font-size: 30px;
+     font-family: "Raleway-Bold";
+     display: inline-block;
+     border: 1px solid #ccc;
+   } 
 
   .theme_dark .content__text-block_type_first-lettered
  .content__paragraph:nth-child(1)::first-letter{ /* буквица */
