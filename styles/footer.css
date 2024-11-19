@@ -1,0 +1,11 @@
+footer{
+    margin-top: 10%;
+    padding: 2.5%;
+    border-top: 2px solid var(--text-color);
+   
+}
+.footer__copyright{
+    font-family: "Raleway";
+    font-size: var(--font-size);
+    text-align: center;
+}

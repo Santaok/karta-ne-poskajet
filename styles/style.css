@@ -1,0 +1,47 @@
+@import url(./main.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+:root{
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --accent-font:  'Raleway';
+  --main-font:  'STIX Two Text';
+  --font-size: 18px;
+}
+
+.theme_dark{
+  --bg-color: #171717;
+  --text-color: #B3B3B3;
+  --accent-color: transparent;
+}

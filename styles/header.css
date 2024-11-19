@@ -1,0 +1,95 @@
+.header{
+    text-align: center;
+    padding-top: 10%;
+   
+    
+
+}
+.header_title{
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+    color: var(--text-color);
+   
+}
+button{
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    font-size: var(--font-size);
+}
+.header_menu{
+    border: 2px   solid var(--text-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+
+.header__theme-toggle{
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    font-family: inherit;
+   
+   
+}
+.header__theme-button {
+
+    cursor: pointer;
+    color: var(--text-color);
+    position: relative;
+}
+
+.header__theme-button:hover {
+    font-weight: bold;
+
+}
+button:focus-visible {
+    outline: 3px solid currentColor;
+  } 
+
+.header__theme-button:hover::after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    z-index: -1;
+    right: 0;
+    left: 0;
+    height: 0.4em;
+    bottom: 0.3em;
+}
+.header__theme-button_is-active:focus::after{
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    z-index: -1;
+    right: 0;
+    left: 0;
+    height: 0.5em;
+    bottom: 0;
+}
+.theme_dark .header__theme-button_is-active:focus{
+    font-weight: 700;
+    pointer-events: none;
+}
+
+ .header__theme-button_is-active:focus::after{ /* кнопка  */
+    content: "";
+    position: absolute;
+    background-image: url(/images/pattern.svg) ;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    height: 0.5em; 
+    bottom: 0;
+}
+.header__theme-button_type_dark:hover::after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    z-index: -1;
+    right: 0;
+    left: 0;
+    height: 0.4em;
+    bottom: 0.3em;
+}
