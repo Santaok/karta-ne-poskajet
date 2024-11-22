@@ -56,7 +56,7 @@ a{
     background-repeat: no-repeat;
     background-image: url('../images/marker-light.svg'); 
   }
-  .theme_dark .content__list li::before {   /* список */
+.theme_dark .content__list li::before {   /* список */
     content: "";
     position: absolute;
   left: 0;
@@ -172,7 +172,7 @@ bottom: 0.1em;
 }
  
 
-.theme_dark.colored-text::after{  /* фон  в краточке у текста */
+.theme_dark .colored-text::after{  /* фон  в краточке у текста */
   content: "";
   position: absolute;
   background-image: url(/images/pattern.svg);
