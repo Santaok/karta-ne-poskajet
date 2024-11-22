@@ -56,7 +56,7 @@ a{
     background-repeat: no-repeat;
     background-image: url('../images/marker-light.svg'); 
   }
-.theme_dark .content__list li::before {   /* список */
+  .theme_dark .content__list li::before {   /* список */
     content: "";
     position: absolute;
   left: 0;
@@ -85,7 +85,8 @@ a{
   .li{
     margin-bottom: 0;
   }
-.content__text-block_type_first-lettered
+
+  .content__text-block_type_first-lettered
   .content__paragraph:nth-child(1)::first-letter{ /* буквица */
      background-color: var(--accent-color) ;
      padding: 0 4px 0 4px;
@@ -172,7 +173,7 @@ bottom: 0.1em;
 }
  
 
-.theme_dark .colored-text::after{  /* фон  в краточке у текста */
+.theme_dark.colored-text::after{  /* фон  в краточке у текста */
   content: "";
   position: absolute;
   background-image: url(/images/pattern.svg);
